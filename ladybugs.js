@@ -20,7 +20,7 @@ function ladybugs(input) {
         let direction = curCommand[1];
         let numPositions = Number(curCommand[2]);
 
-        if (field[positon] == 0) {
+        if (!field[positon]) {
             continue;
         }
 
