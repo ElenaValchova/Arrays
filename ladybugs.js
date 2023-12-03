@@ -1,8 +1,5 @@
-function ladybugs(input) {
-    let range = input[0];
-    let positonsIdxs = input[1].split(" ").map(Number);
-    let field = [];
 
+<<<<<<< HEAD
     for (let j = 0; j < range; j++) {
         if (positonsIdxs.includes(j)) {
             field[j] = 1;
@@ -61,3 +58,5 @@ function ladybugs(input) {
 // ladybugs([ 3, '0 1', '0 right 1', '2 right 1' ]);
 // ladybugs([ 3, '0 1 2', '0 right 1', '1 right 1', '2 right 1']);
 ladybugs([ 5, '3', '3 left 2', '1 left -2']);
+=======
+>>>>>>> 6c7213df82bba5071382f6d6243e5fa3bb30b6f7
