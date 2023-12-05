@@ -5,8 +5,6 @@ function rotateArray(arr) {
     for (let i = 1; i <= rotations; i++) {
         let curToken = arr.pop();
         arr.unshift(curToken);
-        
-        //arr.push(curToken);
     }
     console.log(arr.join(" "));
 }
