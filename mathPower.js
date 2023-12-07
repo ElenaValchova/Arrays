@@ -4,10 +4,10 @@ function mathPower(number, power) {
         result = multiply(result, number);
     }
     console.log(result);
-}
-
-function multiply(a, b) {
-    return a * b;
+    
+    function multiply(a, b) {
+        return a * b;
+    }
 }
 
 mathPower(3, 4);
