@@ -24,7 +24,7 @@ function hauseParty(input) {
         } 
     } else {
         if (guests.includes(name)){
-            console.log(`${name} is already in the list!")`);
+            console.log(`${name} is already in the list!`);
         } else {
             guests.push(name);
         }
