@@ -2,9 +2,7 @@ function manOWar(input) {
     let pirateShipStatus = input[0].split(">").map(Number);
     let warShipStatus = input[1].split(">").map(Number);
     let maxHealth = Number(input[2]);
-    let count = 0;
-    // console.log(pirateShipStatus);
-    // console.log(warShipStatus);
+    
 
     for (let i = 3; i < input.length; i++) {
         let tokens = input[i].split(" ");
@@ -72,7 +70,7 @@ function manOWar(input) {
                 }
             }
         } else if (command == "Status") {
-
+            let count = 0;
             for (let i = 0; i < pirateShipStatus.length; i++) {
                 let curIndex = pirateShipStatus[i];
 
@@ -84,8 +82,6 @@ function manOWar(input) {
             console.log(`${count} sections need repair.`);
         }
     }
-
-
 
     let pirateShipSum = 0;
     for (let i = 0; i < pirateShipStatus.length; i++) {
