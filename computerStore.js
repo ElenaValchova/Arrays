@@ -6,12 +6,9 @@ function computerStore(input) {
 
     while (price != "special" && price != "regular") {
 
-        if (Number(price < 0)) {
+        if (Number(price <= 0)) {
             console.log("Invalid price!");
             
-        } else if (Number(price) == 0) {
-            console.log("Invalid order!");
-    
         } else {
             sum += Number(price);
         }
@@ -31,14 +28,31 @@ function computerStore(input) {
     console.log(`Price without taxes: ${sum.toFixed(2)}$`);
     console.log(`Taxes: ${tax.toFixed(2)}$`);
     console.log("-----------");
-    console.log(`Total price: ${totalSum.toFixed(2)}$"`);
+    console.log(`Total price: ${totalSum.toFixed(2)}$`);
     } else {
         console.log("Invalid order!");
     }
 }
 
+// computerStore(['regular']);
 computerStore([
 
+    '1023',
+    
+    '15',
+    
+    '-20',
+    
+    '-5.50',
+    
+    '450',
+    
+    '20',
+    
+    '17.66',
+    
+    '19.30',
+    
     'regular'
     
     ])
