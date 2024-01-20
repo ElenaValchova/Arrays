@@ -3,10 +3,10 @@ function sortArray(input) {
     console.log(sorted.join("\n"));
 }
 
-// sortArray(['alpha',
+sortArray(['alpha',
 
-// 'beta',
+'beta',
 
-// 'gamma']);
+'gamma']);
 
-sortArray(['Isacc', 'Theodor', 'Jack', 'Harrison', 'George']);
+// sortArray(['Isacc', 'Theodor', 'Jack', 'Harrison', 'George']);

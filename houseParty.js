@@ -9,7 +9,7 @@
 //(if not print: "{name} is not in the list!").
 
 
-function hauseParty(input) {
+function houseParty(input) {
     let guests = [];
 
     for (let commands of input) {
