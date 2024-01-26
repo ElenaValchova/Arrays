@@ -1,1 +1,55 @@
+function schoolGrades(input) {
+    let grades = {};
 
+    for (let element of input) {
+        let tokens = element.split(" ");
+        let name = tokens.shift();
+        let grade = tokens.map(Number);
+        
+
+        if (grades.hasOwnProperty(name)) {
+            grade.forEach(element => {
+                grades[name].push(element);
+            });
+        } else {
+            grades[name] = grade
+        }
+    }
+    let entries = Object.entries(grades);
+    entries.sort((a, b) => a[0].localeCompare(b[0]));
+
+    let result = {};
+    
+
+    for (let [name, grades] of entries) {
+
+        let sum = 0;
+        let count = 0;
+        for (let grade of grades){
+            count++;
+            sum += grade;
+        }
+        sum /= count;
+        result[name] = sum.toFixed(2);
+    }
+
+    for (let [name, grade] of Object.entries(result)) {
+        console.log(`${name}: ${grade}`);
+    }
+}
+
+// schoolGrades(['Lilly 4 6 6 5',
+
+// 'Tim 5 6',
+
+// 'Tammy 2 4 3',
+
+// 'Tim 6 6']);
+
+schoolGrades(['Steven 3 5 6 4',
+
+'George 4 6',
+
+'Tammy 2 5 3',
+
+'Steven 6 3'])
